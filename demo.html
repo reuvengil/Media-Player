@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/netflix-sans" type="text/css">
+    <link rel="stylesheet" href="styles/mediaplayer.css" type="text/css" />
+    <title>demo</title>
+</head>
+
+<body>
+    <div class="video-container" data-width="600px" data-height="350px">
+        <canvas class="frame-view"></canvas>
+        <div class="time-view"></div>
+        <div class="video-title"></div>
+        <video>
+            <source src="short film.mp4" type="video/mp4">
+        </video>
+        <div class="controls-container">
+            <div class="progress-controls">
+                <div class="video-currentTime"></div>
+                <div class="progress">
+                    <input class="progress-time" type="range" value="0" min="0" max="100" step="0.01" />
+                </div>
+                <div class="video-duration"></div>
+            </div>
+            <div class="controls">
+                <button class="play-pause" data-on="play"></button>
+                <button class="backTen"></button>
+                <button class="forwardTen"></button>
+                <button class="volumeOn-volumeOff" data-on="volumeOn"></button>
+                <div class="speed-container"><button class="speed"></button>
+                    <div class="speedText"></div>
+                </div>
+                <button class="fullscreen-exitFullscreen" data-on="fullscreen"></button>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+
+    <script src="scripts/custom.js"></script>
+
+    <script src="scripts/mediaplayer.js"></script>
+</body>
+
+</html>
