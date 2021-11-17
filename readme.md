@@ -71,10 +71,10 @@ after:  '',
 ...
 }
 ```
-**before**: a string that will be attached before the speed number.
+**before**: a string that will be attached before the speed numbers.
 <br>
-**levels**: array of speed levels, need to contain only float number as a string.
+**levels**: array of speed levels. Needs to contain only float numbers as string.
 <br>
-**after**: a string that will be attached after the speed number.
+**after**: a string that will be attached after the speed numbers.
 # [`Demo`](demo.html)
 To watch a demo, run the file [`demo.html`](demo.html) in any desired browser.
