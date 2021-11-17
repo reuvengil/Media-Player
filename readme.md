@@ -1,7 +1,7 @@
 
-# Custom Media Player
+# Styled Media Player
 
-## A media player with high style customize options.
+## A media player with changeable style options.
 
 <img src="readme files/MediaPlayer.png" />
 
@@ -17,7 +17,7 @@
 ```
 
 ```HTML
-<div class="video-container" data-width="600px" data-height="350px">
+<div class="video-container" width="600px" height="350px">
 	<canvas class="frame-view"></canvas>
 	<div class="time-view"></div>
 	<div class="video-title"></div>
@@ -47,17 +47,8 @@
 </div>
 ```
 
-## Optional:
-data-width='X'.
-<br>
-data-height='X'.
-<br>
-(X in pixels)
-<br>
-to define screen size.
-
 # Custom style options:
-In the file [`custom.js`](scripts/custom.js), you can set the icons button by set the svg content.
+In the file [`custom.js`](scripts/custom.js), you can replace the button icons with your own svg content.
 ```javascript
 const  icons = {
 play: () =>  $('<svg> ... </svg>'),
@@ -71,7 +62,7 @@ fullscreen: () =>  $('<svg ... </svg>'),
 exitFullscreen: () =>  $('<svg ... </svg>'),
 }
 ```
-In addition you can set the speed text style by set the following options:
+In addition you can customise the speed options for playing the video. 
 ```javascript
 const  speedLevels = {
 before:  'x', 
@@ -80,10 +71,10 @@ after:  '',
 ...
 }
 ```
-**before**: a string which will be threaded before the speed number.
+**before**: a string that will be attached before the speed number.
 <br>
 **levels**: array of speed levels, need to contain only float number as a string.
 <br>
-**after**: a string which will be threaded after the speed number.
+**after**: a string that will be attached after the speed number.
 # [`Demo`](demo.html)
-To watch demo, run the file [`demo.html`](demo.html) in any desire browser.
+To watch a demo, run the file [`demo.html`](demo.html) in any desired browser.
