@@ -9,15 +9,15 @@
 
 ```HTML
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-<link  rel="stylesheet" href="https://fonts.cdnfonts.com/css/netflix-sans" type="text/css"/>
-<link  rel="stylesheet" href="styles/mediaplayer.css"/>
+<link rel="stylesheet" href="https://fonts.cdnfonts.com/css/netflix-sans" type="text/css"/>
+<link rel="stylesheet" href="styles/mediaplayer.css"/>
 
-<script  src="scripts/custom.js"></script>
-<script  src="scripts/mediaplayer.js"></script>
+<script src="scripts/custom.js"></script>
+<script src="scripts/mediaplayer.js"></script>
 ```
 
 ```HTML
-<div class="video-container" width="600px" height="350px">
+<div class="video-container" style="width: 600px;height: 350px;">
 	<canvas class="frame-view"></canvas>
 	<div class="time-view"></div>
 	<div class="video-title"></div>

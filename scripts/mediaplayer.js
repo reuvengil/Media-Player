@@ -9,10 +9,6 @@ function initMediaPlayer(videoContainer) {
     initControlButtons(videoContainer);
     displayControlsOnMouseMoveEvent(videoContainer);
     initProgressbar(videoContainer);
-
-    // update data:
-    videoContainer.css('width', videoContainer.attr('data-width'));
-    videoContainer.css('height', videoContainer.attr('data-height'));
 }
 
 function initControlButtons(videoContainer) {
